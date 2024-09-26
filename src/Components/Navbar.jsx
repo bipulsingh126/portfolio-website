@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { CiMenuFries } from "react-icons/ci";
 import { IoCloseOutline } from "react-icons/io5";
 import picture from "../assets/bipul.jfif";
-const Navbar = () => {
+import { Link  } from "react-scroll";
+ const Navbar = () => {
   const [menu, SetMenu] = useState(false);
 
   const navItems = [
@@ -46,28 +47,32 @@ const Navbar = () => {
                   className="hover:scale-105 duration-200 cursor-pointer"
                   key={id}
                 >
-                  {" "}
-                  {text}{" "}
+                  <Link  to={text} smooth={true} duration={500} activeClass="active" >
+                  {text}
+                  </Link>
+                  
+                
                 </li>
               ))}
             </ul>
             {/* menu icon */}
             <div className="md:hidden  " onClick={() => SetMenu(!menu)}>
-              {menu ? <CiMenuFries size={24} /> : <IoCloseOutline size={24} />}
-            </div>
+              {menu ?<IoCloseOutline size={24} />  : <CiMenuFries size={24} />}
+            </div>   
           </div>
         </div>
         {/* moblie navabar */}
         {menu && (
-          <div>
+          <div className="bg-white">
             <ul className=" md:hidden flex flex-col items-center justify-center h-screen  space-y-3 text-xl ">
               {navItems.map(({ id, text }) => (
                 <li
                   className="hover:scale-105 duration-200 font-semibold  cursor-pointer"
                   key={id}
                 >
-                  {" "}
-                  {text}{" "}
+                <Link onClick={() => SetMenu(!menu)} to={text} smooth={true} duration={500} activeClass="active">
+                  {text}
+                  </Link>
                 </li>
               ))}
             </ul>

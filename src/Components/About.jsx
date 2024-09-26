@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="max-w-screen-2xl caontainer m-auto px-4 md:px-20 my-10 ">
+    <div name="About" className="max-w-screen-2xl caontainer m-auto px-4 md:px-20 my-10 ">
       <h1 className="text-3xl font-bold mb-5">About</h1>
       <p>
         Hello, i'm Bipul Pratap Singh, a passionate MERN Stack Developer with a
