@@ -121,6 +121,33 @@ const About = () => {
         prevent cross-site vulnerabilities.
       </p>
       <br />
+      <br />
+      <span className="text-xl text-bold  text-red-700 ">Achievements</span>
+      <p>
+        Designed and built full-stack web applications using MongoDB,
+        Express.js, React.js, and Node.js (MERN),Built secure login and
+        registration systems with JWT (JSON Web Tokens) and role-based access
+        control.Successfully connected APIs with front-end components to fetch
+        and display dynamic data.Integrated WebSockets and Socket.io for
+        real-time updates and communication in applications such as chat apps or
+        live dashboards.
+      </p>
+      <br />
+      <br />
+      <span className="text-xl text-bold  text-red-700 ">Statement</span>
+      <p>
+        MERN Stack Developer with a passion for building scalable, responsive
+        web applications using MongoDB, Express.js, React.js, and Node.js. I
+        have hands-on experience in developing full-stack applications,
+        integrating RESTful APIs, and working with modern libraries such as
+        React-Redux for efficient state management. Adept at implementing secure
+        authentication systems, optimizing database performance, and delivering
+        a seamless user experience across devices. My projects reflect a
+        commitment to clean, maintainable code, and I thrive in collaborative
+        environments using agile methodologies. I am always eager to learn new
+        technologies and contribute to innovative, real-world solutions.
+      </p>
+      <hr />
     </div>
   );
 };
